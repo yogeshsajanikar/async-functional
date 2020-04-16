@@ -1,13 +1,14 @@
 # async-functional
 The asynchronous generator `AsyncGenerator` appears on many occasions. For example, fetching a set of records from a REST API, or dealing with database records. This package tries to give a *functional* flavor to dealing with such situations. 
 
-# Functional Operators
+## Functional Operators
 Inspired by `rxjs` and functional programming, this package gives operators such as `map`, `filter`, `zip`, `take` or `takeWhile` alongwith folds such as `foldl`. Hopefully, this allows programs to be implemented using simple `for` loop.
 
 ## *TODO* - Controlled Parallalism
 While working with multiple such async generators, this package will try to create a controlled parallalism. 
 
-### Example
+## Example
+A sample for working with `async-functionl`
 
 ```ts
   import {map, of} from 'async-functional';
