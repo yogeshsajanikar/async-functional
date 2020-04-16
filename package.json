@@ -1,9 +1,13 @@
 {
   "name": "async-functional",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A functional approach to deal with async generators",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/institis/async-functional.git"
+  },
   "files": [
     "build/src"
   ],
