@@ -8,8 +8,9 @@ Inspired by `rxjs` and functional programming, this package gives operators such
 While working with multiple such async generators, this package will try to create a controlled parallalism. 
 
 ## Example
-A sample for working with `async-functionl`
+A couple of samples for working with `async-functionl`
 
+### Applying Map
 ```ts
   import {map, of} from 'async-functional';
 
@@ -17,9 +18,24 @@ A sample for working with `async-functionl`
   const input = of([1, 2, 3, 4, 5]);
 
   // Use map to square each element
-  for await (const i of map(input, x => x * x)) {
+  for await (const i of map(x => x * x, input)) {
     console.log('output = ' + i);
   }
 
 ```
 
+### OR Lift a function to a map 
+
+```ts
+  import {functor, of} from 'async-functional';
+
+  // Create a async generator from an array
+  const input = of([1, 2, 3, 4, 5]);
+  const squareMap = functor((x: number) => x * x);
+
+  // Use map to square each element
+  for await (squareMap(input, x => x * x)) {
+    console.log('output = ' + i);
+  }
+
+```
