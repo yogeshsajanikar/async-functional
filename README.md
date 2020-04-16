@@ -4,7 +4,7 @@ The asynchronous generator `AsyncGenerator` appears on many occasions. For examp
 # Functional Operators
 Inspired by `rxjs` and functional programming, this package gives operators such as `map`, `filter`, `zip`, `take` or `takeWhile` alongwith folds such as `foldl`. Hopefully, this allows programs to be implemented using simple `for` loop.
 
-## Controlled Parallalism
+## *TODO* - Controlled Parallalism
 While working with multiple such async generators, this package will try to create a controlled parallalism. 
 
 ### Example
