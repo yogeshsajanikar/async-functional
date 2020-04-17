@@ -1,6 +1,6 @@
 {
   "name": "async-functional",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A functional approach to deal with async generators",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
@@ -20,6 +20,7 @@
     "posttest": "npm run check"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "@types/node": "^10.0.3",
     "gts": "^2.0.0",
     "jest": "^25.3.0",
